@@ -10,6 +10,13 @@
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c"
   },
+  "keywords": [
+    "react",
+    "component",
+    "modale",
+    "plugin",
+    "npm"
+  ],
   "author": "RominM",
   "license": "mgl-studio",
   "devDependencies": {

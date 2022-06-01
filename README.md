@@ -1,7 +1,7 @@
 # modale-react-rm
 
-> modale react library by Romin Manogil
-[![NPM](https://img.shields.io/npm/v/modal-react.svg)](https://www.npmjs.com/package/modal-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> modale-react-rm library by Romin Manogil
+[![NPM](https://img.shields.io/npm/v/modale-react-rm.svg)](https://www.npmjs.com/package/modale-react-rm) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -11,7 +11,7 @@ npm i modale-react-rm
 
 ## Example
 
-[![Modale](./src/assets/screen-modale-example.PNG "Modale")
+[![Modale](./src/assets/screen-modale-example.PNG)]("Modale")
 
 ## Usage
 
@@ -25,6 +25,7 @@ const App = () => {
    
    return (
       <div>
+         /*example to open up*/
          <button type='button' onClick={setIsOpen(true)}>Save</button>
          <Modale content={message} trigger={isOpen} setTrigger={setIsOpen} />
       </div>
@@ -35,17 +36,11 @@ export default App
 
 ## Controllable Props
 
-<!-- The `<Modale/>` component uses 3 props which are required to make it work at its best. -->
-
-<!-- -  `content` is a **_string_** type. It contains of course the message you want to see in the modale.
--  `trigger` is a **_boolean_** type. It contains the state (opened or closed) of the modale.
--  `setTriggrer` is a **_function_** type. It calls the function which closes the modale. -->
-
-|Prop name    |Description                                  |Default                         |
-|-------------|---------------------------------------------|--------------------------------|
-|content      |**_string_**                                 |n/a                             |
-|trigger      |**_boolean_**                                |`false`                         |
-|setTrigger   |**_function_** used **_boolean_** params     |`() => setTrigger(false)`       |
+|Prop name    |Description                                   |Default                         |
+|-------------|----------------------------------------------|--------------------------------|
+|content      |**_string_** Your message                     |n/a                             |
+|trigger      |**_boolean_** Open or close modale            |`false`(closed)                 |
+|setTrigger   |cross **_function_** used **_boolean_** params|`() => setTrigger(false)`       |
 
 ## More info
 
